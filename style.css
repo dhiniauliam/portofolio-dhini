@@ -1,0 +1,504 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Logo */
+  .brand {
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 1.8rem;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    color: #4a4a4a;
+    background: #f2eded;
+  }
+  
+  header {
+    background: linear-gradient(
+      90deg,
+      #0077b6,
+      #00b4d8
+    ); /* Ganti warna ungu ke biru */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .menu-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-links li {
+    margin: 0 1rem;
+  }
+  
+  .menu-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-links a:hover {
+    color: #333;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(
+      135deg,
+      #ade8f4,
+      #00b4d8
+    ); /* Ganti warna ungu ke biru */
+    color: #fff;
+    padding: 0 1rem;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro .cta-button {
+    background: #00b4d8; /* Ganti warna ungu ke biru */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .intro .cta-button:hover {
+    background: #0077b6; /* Ganti warna ungu ke biru */
+  }
+  
+  /* Profil Saya */
+  .profile,
+  .works,
+  .reach-out {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .profile h2,
+  .works h2,
+  .reach-out h2 {
+    font-size: 2.5rem;
+    color: #8e7ab5;
+    margin-bottom: 2rem;
+  }
+  
+  .profile p,
+  .works p,
+  .reach-out p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  .highlight {
+    font-weight: bold;
+  }
+  
+  /* Profil Saya */
+  .profile {
+    background: #fff;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    border-radius: 10px;
+  }
+  
+  .profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .profile-text {
+    max-width: 600px; /* Atur lebar maksimum untuk teks */
+    text-align: justify; /* Pastikan teks berada di tengah */
+  }
+  
+  .profile-image {
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Memastikan proporsi gambar tetap */
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Karya Saya */
+  .works {
+    background: #f2eded;
+    padding: 4rem 2rem;
+  }
+  
+  .works h2 {
+    font-size: 2.8rem;
+    color: #4a4a4a; /* Ganti warna ungu ke biru */
+    margin-bottom: 2rem;
+  }
+  
+  .work-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .work-card {
+    background: #fff;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left; /* Perubahan: Teks di dalam kartu rata kiri */
+  }
+  
+  .work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .work-card img {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .work-card h3 {
+    font-size: 2rem;
+    color: #4a4a4a; /* Ganti warna ungu ke biru */
+    margin-bottom: 1rem;
+  }
+  
+  .work-card p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify; /* Perubahan: Teks dijustifikasi untuk rata kanan kiri */
+  }
+  
+  .work-card video {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .work-card .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .work-card .btn {
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .work-card .drive {
+    background: #0077b6;
+  }
+  
+  .work-card .drive:hover {
+    background: #0096c7;
+  }
+  
+  /* Kontak */
+  .reach-out {
+    background: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .reach-out h2 {
+    font-size: 2.5rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    background: #f7f7f7;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; /* Atur lebar kotak */
+    max-width: 100%;
+  }
+  
+  .email-container {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .contact-item i {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 0; /* Menghilangkan padding */
+    margin: 0; /* Menghilangkan margin jika ada */
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .menu-links {
+      display: none;
+    }
+    .menu-links.active {
+      display: block;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .intro h1 {
+      font-size: 2.5rem;
+    }
+  
+    .intro p {
+      font-size: 1rem;
+    }
+  
+    .work-card {
+      width: 90%;
+    }
+  }
+  
+  .title-section {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+    margin-top: 60px; /* Tambahkan margin-top untuk menghindari tumpang tindih dengan header */
+  }
+  
+  .title-section h1 {
+    font-size: 2.5rem;
+    color: #4a4a4a; /* Ganti warna ungu ke biru */
+    margin-bottom: 1rem;
+    font-weight: 600; /* Menggunakan font yang lebih tebal untuk judul */
+  }
+  
+  .title-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .work-container .content {
+    background-color: #f9f9f9; /* Warna latar belakang kotak */
+    border: 1px solid #ddd; /* Garis batas kotak */
+    border-radius: 8px; /* Sudut yang membulat */
+    padding: 25px; /* Ruang di dalam kotak */
+    margin-top: 15px; /* Jarak atas dari elemen sebelumnya */
+    text-align: justify; /* Justifikasi teks */
+  }
+  
+  .video-container {
+    margin-top: 20px; /* Jarak atas dari elemen sebelumnya */
+    border: 1px solid #ddd; /* Garis batas di sekitar video */
+    border-radius: 8px; /* Sudut yang membulat */
+    overflow: hidden; /* Menghindari konten melampaui batas */
+  }
+  
+  .video-container iframe {
+    width: 100%; /* Lebar penuh dari kontainer */
+    height: 315px; /* Tinggi tetap untuk video */
+    border: none; /* Menghilangkan border default */
+  }
+  /* Tentang Saya */
+  .about {
+    background: #fff;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5rem;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .about:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: justify;
+    margin-right: 1rem; /* Spasi antara teks dan foto */
+  }
+  
+  .about-photo {
+    flex: 0 0 45%; /* Porsi foto lebih kecil */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo img {
+    width: 300px; /* Menentukan lebar gambar */
+    height: 300px; /* Menentukan tinggi gambar agar proporsional */
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    display: block; /* Menghilangkan ruang ekstra di bawah gambar */
+    margin: 0 auto; /* Memusatkan gambar secara horizontal */
+    object-fit: cover; /* Memastikan isi gambar tetap proporsional */
+}
+
+
+  
+  .video-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .button-group {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .btn.drive {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0077b6; /* Biru */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn.drive:hover {
+    background-color: #0096c7; /* Biru muda */
+  }
+
+  .btn i {
+    margin-right: 8px; /* Spasi antara ikon dan teks */
+  }
+
+  /* Contact Section */
+.contact {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input, 
+.contact textarea, 
+.contact button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #0056b3;
+}
